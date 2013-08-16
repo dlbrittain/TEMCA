@@ -1,0 +1,113 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil\fcharset0 Courier New;}{\f2\fnil\fprq1\fcharset0 Ansi Fixed;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\qc\cf1\lang1033\b\f0\fs48 SAPERA LT for 64-bit Windows\par
+\fs40 Version history\par
+\cf0\b0\f1\fs20\par
+\pard\cf1\b\f0\fs32 Version 6.01\par
+\cf0\b0\fs24\tab First unreleased version\par
+\par
+\cf1\b\fs32 Version 6.12\par
+\cf0\b0\fs24\tab Unreleased version\par
+\par
+\pard\nowidctlpar\b General\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Added support for acquiring into a RGB16161616 buffer\par
+{\pntext\f3\'B7\tab}Only one running instance of the Log Viewer is allowed\par
+{\pntext\f3\'B7\tab}The Log Viewer now saves files with the .txt extension by default\par
+{\pntext\f3\'B7\tab}Added support for saving RGB16161616 buffers to TIFF files\par
+{\pntext\f3\'B7\tab}Added display of Sapera LT product ID in Sapera Configuration Utility\par
+{\pntext\f3\'B7\tab}In Log Viewer, added context menu (available from the right mouse button) to clear the messages or save them to a file\par
+{\pntext\f3\'B7\tab}In General I/O module and I/O demo, added support for optocouple output type\par
+{\pntext\f3\'B7\tab}Added the new Sapera Monitor tool\par
+{\pntext\f3\'B7\tab}Added GrabLut console example (using SapAcquisition class)\par
+{\pntext\f3\'B7\tab}Added support for dynamic look-up tables in acquisition module (CORACQ_CAP_DYNAMIC_LUT, CorAcqNewDynamicLut, CorAcqFreeDynamicLut, CorAcqGetDynamicLut, and CorAcqSetDynamicLut)\par
+{\pntext\f3\'B7\tab}Added support for dynamic look-up tables in transfer module (CORXFER_CAP_DYNAMIC_LUT, CORXFER_CAP_DYNAMIC_LUT_CYCLE_MODE, CORXFER_PRM_DYNAMIC_LUT_NUMBER, and CORXFER_PRM_DYNAMIC_LUT_CYCLE_MODE)\par
+{\pntext\f3\'B7\tab}Added buffer format conversions from RGB101010 to RGB888 and RGB8888\par
+{\pntext\f3\'B7\tab}Added support for 60-day evaluation when there is no Product Key\par
+{\pntext\f3\'B7\tab}Added Product Key Manager utility\par
+{\pntext\f3\'B7\tab}Upgraded installation program from InstallShield 11.5 to InstallShield 12 which fully supports Windows Vista\par
+{\pntext\f3\'B7\tab}In CorGraph module, added support for RGB161616 and RGB16161616 (without clipping)\line\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 Sapera++\par
+\b0\i SapXferPair class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetTrashCallbackInfo, GetTrashCallback, and GetTrashContext methods so that each transfer pair can have its own trash buffer callback function\par
+\pard\nowidctlpar\i SapDynamicLut class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 New class which adds support for dynamic look-up tables\line\pard\nowidctlpar\i SapManager class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added GetCommandTimeout and SetCommandTimeout methods\line\pard\nowidctlpar\i SapTransfer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added IsConnected method\par
+\pard\nowidctlpar\i ImageWnd class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 In GetPixelString method, do not report alpha channel value for RGB16161616\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 CamExpert\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Added support for controlling Camera Link cameras through the serial port\par
+\pard\nowidctlpar\par
+\b Other important fixes\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 In installation program, fixed behavior of progress bar, which went to 100% too early\par
+{\pntext\f3\'B7\tab}In Sequential Grab demo, fixed incorrect calculation of frame rate when using the Pause button\line\pard\cf1\b\fs32\par
+Version 6.20\par
+\cf0\b0\fs24\tab Unreleased version\par
+\par
+\pard\nowidctlpar\b General\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Added CorPci driver and PCI Diagnostic Utility\par
+{\pntext\f3\'B7\tab}Added support for LAB data formats (LAB, LAB101010, LAB16161616, LAB planar)\par
+{\pntext\f3\'B7\tab}Added DALSA Application Launcher service (CorAppLauncher) under Windows Vista to bypass User Account Countrol (UAC) for Sapera Configuration, Product Key Manager, and PCI Diagnostics\par
+{\pntext\f3\'B7\tab}In acquisition module, added CORACQ_CAP_CROP_ACTIVATION and CORACQ_PRM_CROP_ACTIVATION\par
+{\pntext\f3\'B7\tab}Added CorXferConnectEx function in transfer module, so that the Sapera LT communications timeout may be temporarily bypassed\par
+{\pntext\f3\'B7\tab}Updated product key support for new 20-character alphanumeric values\par
+{\pntext\f3\'B7\tab}Added CorManGetSaperaVersionInfo function\par
+{\pntext\f3\'B7\tab}Modified Product Key Manager interface to better support the new 20-character alphanumeric values\par
+{\pntext\f3\'B7\tab}In Sapera Configuration, made all settings read-only when CamExpert is running\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 Sapera++\par
+\b0\i SapAcquisition class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added support for all available acquisition LUTs: added optional LUT index argument to GetLut, added new version of ApplyLut with a LUT index, and added GetNumLut method\line\pard\nowidctlpar\i SapBuffer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added IsCapabilityValid and IsParameterValid methods\par
+{\pntext\f3\'B7\tab}Added FileFormat enumeration to identify possible file formats\line\pard\nowidctlpar\i SapDisplay class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetLocation method\line\pard\nowidctlpar\i SapLut class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetLocation method\line\pard\nowidctlpar\i SapManager class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added GetServerEventType method\par
+{\pntext\f3\'B7\tab}Added GetVersionInfo method to retrieve Sapera LT version and licensing information\line\pard\nowidctlpar\i SapTransfer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetLocation method\par
+{\pntext\f3\'B7\tab}Added SetConnectTimeout and GetConnectTimeout methods\par
+{\pntext\f3\'B7\tab}Added IsCycleModeAvailable method\line\pard\nowidctlpar\i SapView class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added IsCapabilityValid and IsParameterValid methods\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 CamExpert\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Added support for Falcon 1.4M100 camera\par
+{\pntext\f3\'B7\tab}Added support for Power over Camera Link (PoCL)\par
+{\pntext\f3\'B7\tab}Updated help system so that it now works under Windows Vista\par
+\pard\nowidctlpar\par
+\b Other important fixes\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 In Sapera Configuration, fixed case where system serial port key does not exist yet when checking for administrative privileges\par
+{\pntext\f3\'B7\tab}Fixed a problem by which the run-time version of Sapera LT was not correctly identified as such when installed through the full installer, which could result in 'Evaluation Period Expired' errors\par
+{\pntext\f3\'B7\tab}Fixed CorGraphicEllipse function, which would draw incorrectly at the left and right side in a large buffer when the dimensions of the ellipse are close to buffer dimensions\par
+{\pntext\f3\'B7\tab}Fixed incorrect product key validation by libraries, which always ran as an evaluation version\par
+{\pntext\f3\'B7\tab}In CLoadSaveDlg class of Sapera++, fixed problem by which file saving took place even after cancelling save options dialogs\par
+{\pntext\f3\'B7\tab}Fixed incomplete format validation in CorLutNew, by which incorrect formats would be allowed\par
+{\pntext\f3\'B7\tab}When CorManOpen and CorManClose are called from application code, the number of calls to each must now match in order for the latter to take effect\par
+{\pntext\f3\'B7\tab}Fixed 8-bit monochrome to RGB8888 conversion bug by which the rightmost source pixels were sometimes copied to the middle destination pixels\par
+{\pntext\f3\'B7\tab}Fixed inconsistent treatment of YUYV and YUY2 formats, since the two are in fact the same\par
+{\pntext\f3\'B7\tab}In Sapera Configuration, made all settings read-only when CamExpert is running\par
+{\pntext\f3\'B7\tab}In Direct Draw support (cvdi), fixed problem by which 8-bit monochrome was incorrectly identified as being available when detecting valid offscreen formats\line\pard\nowidctlpar\b\par
+\pard\cf1\fs32 Version 6.30.00.0310 (released on January 26, 2009)\par
+\pard\nowidctlpar\cf0\fs24 General\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 First version of .NET components (General I/O and graphics not implemented yet)\par
+{\pntext\f3\'B7\tab}New .NET demos (equivalent to existing Sapera++ GUI demos): Bayer Demo, Flat Field Demo, Grab Demo, Sequential Grab Demo\par
+{\pntext\f3\'B7\tab}New .NET examples (equivalent to existing Sapera++ console examples): Color Split, File Load, Grab, Grab With LUT\par
+{\pntext\f3\'B7\tab}Improved frame rate calculation In Sequential Grab Demo\par
+{\pntext\f3\'B7\tab}Made CorDisplayGetDC and CorDisplayReleaseDC functions available (used to be for 32-bit only)\par
+{\pntext\f3\'B7\tab}Added new Sapera++ GUI Classes manual, the content was extracted from the existing Sapera++ Programmer's Manual\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 Sapera++\par
+\b0\i SapAcqDevice class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added automatically update of transfer related parameters when writing FlatFieldCalibrationEnable and       LoadCameraConfiguration features\line\pard\nowidctlpar\i SapDisplay class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Made GetDC and ReleaseDC methods available (used to be for 32-bit only)\line\pard\nowidctlpar\i SapFlatField class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added GetGainMinMax and GetOffsetMinMax methods\par
+{\pntext\f3\'B7\tab}Added GetBlackImagePercentage and SetGetBlackImagePercentage methods\par
+{\pntext\f3\'B7\tab}Added optional 'number of images' argument to ComputeGain / ComputeOffset methods\line\pard\nowidctlpar\i SapGio class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetLocation method\line\pard\nowidctlpar\i SapTransfer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0  Fixed a bug by which the buffer state was incorrectly set to empty before calling the application transfer callback function\line\pard\nowidctlpar\i CFlatFieldDlg class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Made flat-field calibration procedure clearer by using 'dark image' instead of 'black image', and 'non-saturated bright image' instead of 'white image'\line\pard\f2\fs20\par
+\pard\nowidctlpar\b\f0\fs24 CamExpert\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Improved CameraLink serial port support, in particular for Falcon 1.4M100 camera\par
+{\pntext\f3\'B7\tab}Improved support for flat-field correction\par
+\pard\nowidctlpar\par
+\b Other important fixes\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 In Sequential Grab Demo, fixed an error which happens when trying to reload a sequence which was originally generated from 10-bit buffers\par
+{\pntext\f3\'B7\tab}Fixed problem with Product Key Manager and Sapera LT API, which were identifying many invalid product  keys as being valid\line\pard\cf1\b\fs32\par
+}
+ 

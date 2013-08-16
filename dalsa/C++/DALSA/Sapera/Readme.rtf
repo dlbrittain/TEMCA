@@ -1,0 +1,285 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}{\f2\fnil\fprq1\fcharset0 Ansi Fixed;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\nowidctlpar\qc\cf1\b\f0\fs48 Sapera LT\cf0\fs32\par
+\cf1\fs20 for\fs48\par
+Windows XP / Vista / Windows 7\par
+ (64-bit)\par
+\cf0\fs28 Version 7.00.00.0912\b0\par
+DALSA Corp., November 26\super th\nosupersub , 2009\fs24\par
+\pard\nowidctlpar\par
+\tab\tab\tab\par
+\cf1\b\fs32 Table of Contents\cf0\b0\fs24\par
+\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Disk Contents\par
+{\pntext\f3\'B7\tab}What's New\par
+{\pntext\f3\'B7\tab}Hardware Supported\par
+{\pntext\f3\'B7\tab}Installation\par
+{\pntext\f3\'B7\tab}Backward Compatibility Information\par
+{\pntext\f3\'B7\tab}Differences with Sapera LT for 32-bit Windows\par
+{\pntext\f3\'B7\tab}Notes\par
+\pard\nowidctlpar\fs20\par
+\par
+\cf1\b\fs32 Disk Contents\cf0\b0\par
+\fs24\par
+\b\f1 <SAPERADIR>\\Bin\par
+\b0\f0\tab Utility programs\par
+\fs20\par
+\b\f1\fs24 <SAPERADIR>\\CamFiles\par
+\b0\f0\fs20\tab\fs24 Camera configuration files      \par
+\fs20\par
+\b\f1\fs24 <SAPERADIR>\\CamExpert\par
+\b0\f0\tab CamExpert camera configuration utility\par
+\fs20\par
+\b\f1\fs24 <SAPERADIR>\\Classes\tab\tab\par
+\b0\f0\tab Sapera++ header files (Basic and GUI Classes)\par
+\tab\lang3084 Sapera++ source code (GUI Classes only)\par
+\par
+\lang1033\b\f1 <SAPERADIR>\\Components\\NET\par
+\b0\f0\tab .NET components\par
+\par
+\b\f1 <SAPERADIR>\\Demos\tab\tab\par
+\b0\f0\tab Demonstration programs\par
+\par
+\b\f1 <SAPERADIR>\\Examples \tab\par
+\b0\f0\tab Example console programs\par
+\par
+\b\f1 <SAPERADIR>\\Fonts  \tab\tab\par
+\b0\f0\tab Graphic font files\par
+\par
+\b\f1 <SAPERADIR>\\Help\tab\tab\par
+\pard\nowidctlpar\fi720\b0\f0 On-line documentation (Compiled HTML and PDF formats)\par
+\pard\nowidctlpar\par
+\b\f1 <SAPERADIR>\\Help\\VisualStudio\par
+\pard\nowidctlpar\fi720\b0\f0 Integrated C++ and .NET help for Visual Studio 2005 and 2008\par
+\pard\nowidctlpar\par
+\b\f1 <SAPERADIR>\\Images     \tab\par
+\b0\f0\tab Images files used by demos and examples\par
+\par
+\b\f1 <SAPERADIR>\\Include     \tab\par
+\b0\f0\tab Header files for C and C++ libraries\par
+\par
+\b\f1 <SAPERADIR>\\Lib             \par
+\b0\f0\tab Import libraries\par
+                  \par
+\b\f1 Windows system directory (windows\\system32)\par
+\b0\f0\tab Dynamic Link Libraries (DLLs)\par
+\par
+\b\f1 Windows driver directory (windows\\system32\\drivers)\par
+\b0\f0\tab Device driver and service files\par
+\fs20\par
+\par
+\cf1\b\fs32 What's New\par
+\cf0\b0\fs24\par
+\b\fs28 Version 7.00\par
+\par
+\fs24 General\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 Added support for Windows 7\par
+{\pntext\f3\'B7\tab}Merged 32-bit and 64-bit installers into a common executable\par
+{\pntext\f3\'B7\tab}Added buffer data conversion from RGB16161616 to RGB8888 and RGB101010\par
+{\pntext\f3\'B7\tab}Added support for Visual Studio 2008: GUI classes DLLs, Visual Studio projects for demos and examples (C++ and .NET)\par
+{\pntext\f3\'B7\tab}Added support for GigEVision selectors in CorFeature module with the CORFEATURE_PRM_SELECTOR parameter and the following functions: CorFeatureGetSelectedCount, CorFeatureGetSelectedIndex, CorFeatureGetSelectedName, CorFeatureGetSelectingCount, CorFeatureGetSelectingIndex, and CorFeatureGetSelectingName\par
+{\pntext\f3\'B7\tab}Added Genie demos and examples for C++ and .NET\par
+{\pntext\f3\'B7\tab}Added array feature type in CorFeature module: CORFEATURE_PRM_ARRAY_LENGTH, new value CORFEATURE_VAL_TYPE_ARRAY for CORFEATURE_PRM_TYPE\par
+{\pntext\f3\'B7\tab}Sapera LT installations are now packaged as a single executable, instead of multiple files (SaperaLTSetup.exe, SaperaLTCamExpertSetup.exe, and SaperaLTRuntimeSetup.exe)\par
+{\pntext\f3\'B7\tab}Removed debug version of Basic classes DLL and library (see the Notes section below for more information)\par
+{\pntext\f3\'B7\tab}In CorBuffer module, added conversions from UYVY, Y411, and YUY2 to YUV\par
+{\pntext\f3\'B7\tab}Removed custom setup type from installation program\par
+{\pntext\f3\'B7\tab}In CorFeature module, added CORFEATURE_PRM_DESCRIPTION to support full description of feature\par
+{\pntext\f3\'B7\tab}Made CORDISPLAY_PRM_PIXEL_TYPE_OFFSCREEN and CORDISPLAY_PRM_PIXEL_TYPE_OVERLAY unavailable for Windows Vista and up\par
+{\pntext\f3\'B7\tab}Increased maximum length of Log Viewer messages\par
+{\pntext\f3\'B7\tab}In Sapera Monitor, disabled acquisition module End of Line event by default, since monitoring this event can add a lot of overhead\par
+{\pntext\f3\'B7\tab}Fixed 'Data Valid Enable' in CCA files for Dalsa Piranha HS 4x and 8x cameras\par
+{\pntext\f3\'B7\tab}Integrated the following manuals in the Visual Studio 2005/2008 help system: User's Manual, Sapera++ Manual, and .NET Manual. Context-sensitive help is available through the F1 key for C++ and .NET (C# and VB.NET) source code.\par
+{\pntext\f3\'B7\tab}In the installation program, removed the Modify option in maintenance mode, only Repair and Remove are now available\line\pard\nowidctlpar\f2\fs20\par
+\b\f0\fs24 Sapera++\par
+\b0\i SapAcqDevice class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added support for 64-bit integers in GetFeatureValue and SetFeatureValue\par
+{\pntext\f3\'B7\tab}Fixed bug by which binning factor was ignored when calling Destroy and Create\par
+\pard\nowidctlpar\i SapBayer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Reduced memory requirements if software conversion is not enabled\par
+\pard\nowidctlpar\i SapBuffer class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 In Clear method, added YUYV, which is equivalent to YUY2\line\pard\nowidctlpar\i SapFeature class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added signed integer versions of GetMin, GetMax, and GetInc methods\par
+{\pntext\f3\'B7\tab}Added support for selectors with the following methods: IsSelector, GetSelectedFeatureCount, GetSelectedFeatureName, GetSelectedFeatureIndex, GetSelectingFeatureCount, GetSelectingFeatureName, and GetSelectingFeatureIndex\par
+{\pntext\f3\'B7\tab}Added array feature type: GetArrayLength method, new value 'TypeArray' for 'Type' enumeration\par
+{\pntext\f3\'B7\tab}Added GetDescription method to support full description of feature\line\pard\nowidctlpar\i SapFlatField class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added support for ROI in software flat field correction\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Added ReadGainOffsetFromDevice method for reading the current hardware flat-field coefficients\\\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 Improved error messages for flat-field calibration\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Fixed infinite wait condition with flat-line calibration\par
+\pard\nowidctlpar\i SapGraphic class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added SetLocation method\par
+{\pntext\f3\'B7\tab}Added IsCapabilityValid and IsParameterValid methods\line\pard\nowidctlpar\i SapXferPair class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 In SetFramesOnBoard function, removed limitation of number of frames having to be larger than 1, since this may now be legal\par
+\pard\nowidctlpar\i CFlatFieldDlg class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0  Added explicit separate control of black and white maximum deviation\par
+\pard\nowidctlpar\i CLoadSaveDlg\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added warning when automatic data conversion occurs when saving an image to a file\par
+{\pntext\f3\'B7\tab}Added possibility to select buffer format when loading from RAW files\par
+{\pntext\f3\'B7\tab}Fixed Image Save dialog to change file extension as soon as file type changes\line\pard\nowidctlpar\f2\fs20\par
+\b\f0\fs24 Sapera++ Demos\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 In Grab with Lut example (C++), fixed bug when no acquisition LUT is available\par
+{\pntext\f3\'B7\tab}Added cleanup of Sapera++ resources when logging off or shutting down in all GUI demos (Sapera++ and .NET)\par
+{\pntext\f3\'B7\tab}In GigE Sequential Grab Demo, fixed erroneous frame rate with Genie cameras\par
+{\pntext\f3\'B7\tab}In GrabConsole example, fixed invalid (off-by-one) handling with alphabetical indexes when there are more than nine CCF files\par
+{\pntext\f3\'B7\tab}In the GigE Sequential Grab Demo, fixed an error which happens when trying to reload a sequence which was originally generated from 10-bit buffers\par
+{\pntext\f3\'B7\tab}In the Flat Field Demo, fixed incorrect state of Snap and Grab buttons after clicking on Cancel in the calibration dialog\par
+{\pntext\f3\'B7\tab}For all demos and examples in Visual Studio 2005/2008, added a warning when compiling a 32-bit configuration under 64-bit Windows, and a 64-bit configuration under 32-bit Windows\line\pard\nowidctlpar\b\par
+.NET Components\par
+\b0\i SapAcqDevice class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added unsigned 32/64-bit versions of GetFeatureValue and SetFeatureValue\line\pard\nowidctlpar\i SapFeature class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added support for selectors with the following properties: IsSelector, SelectedFeatureCount, SelectedFeatureNames, SelectedFeatureIndexes, SelectingFeatureCount, SelectingFeatureNames, and SelectingFeatureIndexes\par
+{\pntext\f3\'B7\tab}Added signed and unsigned 32/64-bit versions of GetValueMin, GetValueMax, and GetValueIncrement methods\par
+{\pntext\f3\'B7\tab}Added array feature type: ArrayLength property, new value 'Array' for 'Type' enumeration\par
+{\pntext\f3\'B7\tab}Added Description property to support full description of feature\line\pard\nowidctlpar\i SapFlatField class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 Added ReadGainOffsetFromDevice method for reading the current hardware flat-field coefficients\par
+\pard\nowidctlpar\i SapGio class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 New class\line\pard\nowidctlpar\i SapGraphic class\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\i0 New class\line\pard{\pntext\f0 1\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec }
+\nowidctlpar\fi-720\li720\par
+\pard\nowidctlpar\b .NET Components Demos\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720\b0 In BufDlg class, added YUYV format (equivalent to YUY2)\par
+{\pntext\f3\'B7\tab}In ImageBox class, improved handling of planar formats in GetPixelString\par
+{\pntext\f3\'B7\tab}In LoadSaveDlg class, removed unsupported JPEG 2000 support\par
+{\pntext\f3\'B7\tab}In LoadSaveDlg class, added warning when automatic data conversion occurs when saving an image to a file\par
+{\pntext\f3\'B7\tab}In RawFileDlg class, added buffer format when loading RAW files\par
+{\pntext\f3\'B7\tab}In ViewDlg class, fixed problem when an invalid range value is entered in the text box.\par
+{\pntext\f3\'B7\tab}In all demos, added cleanup of Sapera++ resources when logging off or shutting down\par
+{\pntext\f3\'B7\tab}In GigE Flat Field Demo,  added a warning message when pixel format is automatically changed during calibration.\par
+{\pntext\f3\'B7\tab}In the GigE Sequential Grab Demo, fixed an error which happens when trying to reload a sequence which was originally generated from 10-bit buffers\par
+{\pntext\f3\'B7\tab}In the Flat Field Demo, fixed incorrect state of Snap and Grab buttons after clicking on Cancel in the calibration dialog\par
+{\pntext\f3\'B7\tab}In GigE Flat Field Demo, fixed a problem by which setting software flat-field still enabled calibration mode on the camera.\par
+{\pntext\f3\'B7\tab}In Flat Field Demo, fixed non-working Bayer camera.\par
+{\pntext\f3\'B7\tab}In GigE Sequential Grab Demo,  fixed frame rate display with the GigE-Vision driver.\par
+{\pntext\f3\'B7\tab}In GigE Auto White Balance console example for C#/VB.NET, fixed a crash when exiting the application just before calibration\par
+{\pntext\f3\'B7\tab}For all demos and examples in Visual Studio 2005/2008, added a warning when compiling a 32-bit configuration under 64-bit Windows, and a 64-bit configuration under 32-bit Windows\line\pard\nowidctlpar\b\par
+CamExpert\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0 Added support for Genie\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\fi-720\li720 Reorganized layout of devices window, camera files window, and categories tabs in order to increase usability of parameter/feature categories\par
+{\pntext\f3\'B7\tab}For Genie, fixed problem by which camera settings were incorrect updated when using Cancel in the Output Settings dialog\par
+{\pntext\f3\'B7\tab}For Genie, fixed availability of Color Calibration feature for monochrome cameras\par
+{\pntext\f3\'B7\tab}Fixed frame rate calculation for Genie HM when binning is enabled\par
+{\pntext\f3\'B7\tab}Fixed incorrect loading of images from RAW files in the Image Viewer\par
+{\pntext\f3\'B7\tab}Fixed incorrect Bayer dialog which appeared when doing software Bayer on a Genie\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed invalid update of crop height and top when loading a CCF file\par
+{\pntext\f3\'B7\tab}Added an abort dialog in flat-field calibration procedure if image acquisition takes too long or never returns\par
+{\pntext\f3\'B7\tab}For Genie, fixed incorrect log messages from the Output Settings dialog\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed incomplete dialogs for Line Trigger Method 1 and Camera Reset Method 1\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed invalid output messages in line integration dialog\par
+{\pntext\f3\'B7\tab}Fixed invalid coordinates on pixel viewer when zooming\par
+{\pntext\f3\'B7\tab}Prevented selection of Bayer decoder when video type is mono\par
+{\pntext\f3\'B7\tab}Changed title name to 'Camera Mode' when a third-party frame grabber is selected\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed incomplete line trigger and camera reset dialogs\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed incorrect brightness value limits on some analog boards\par
+{\pntext\f3\'B7\tab}Fixed incorrect file content when saving to CCA\par
+{\pntext\f3\'B7\tab}For Genie, fixed tooltip error for 'Gain' and 'Black Level' features\par
+{\pntext\f3\'B7\tab}Fixed bad handling of string parameters with periods in them, like an IP address\par
+{\pntext\f3\'B7\tab}For Genie, made LUT settings and LUT Enable unavailable while grabbing\par
+{\pntext\f3\'B7\tab}For frame grabbers, fixed incorrect time units for Strobe Method 3 in line scan\par
+{\pntext\f3\'B7\tab}For frame grabbers, added support for infinite frame count with external trigger\par
+{\pntext\f3\'B7\tab}Added notification dialog which appears when a new device is connected while CamExpert is running\line\pard\nowidctlpar\par
+\b\fs28 Previous Versions\par
+\b0\fs24\tab See History.rtf\par
+\par
+\par
+\cf1\b\fs32 Hardware Supported\par
+\cf0\b0\fs24\par
+\b Cameras\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0 Genie Series\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlcont\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar Specific CamExpert plug-in for the following cameras:\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Piranha Color\par
+\lang3084{\pntext\f3\'B7\tab}Falcon 1.4M100\lang1033\par
+\pard\nowidctlpar\b\par
+Frame Grabbers\b0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 X64 Xcelera-AN LX1 Quad\par
+{\pntext\f3\'B7\tab}X64 Xcelera-CL LX1 Base\lang3084\par
+\lang1033{\pntext\f3\'B7\tab}X64 Xcelera-CL PX4 Full/Dual\lang3084\par
+\lang1033{\pntext\f3\'B7\tab}X64 Xcelera-CL PX4 SE Full (PowerPack)\lang3084\par
+\lang1033{\pntext\f3\'B7\tab}X64 Xcelera-LVDS PX4\par
+{\pntext\f3\'B7\tab}X64-CL Express (beta)\par
+\pard\nowidctlpar\par
+\par
+\cf1\b\fs32 Installation\cf0\b0\fs24\par
+\par
+\b\fs28 Installation Procedure\par
+\b0\fs24\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Insert installation CD-ROM in your CD-ROM drive.\par
+{\pntext\f3\'B7\tab}From Windows Explorer, run \b launch.exe\b0 .\par
+{\pntext\f3\'B7\tab}Follow the installation program's on-screen instructions.\par
+{\pntext\f3\'B7\tab}At the beginning of the installation you\rquote ll be asked to enter your product key (see details on the section below).\par
+\pard\nowidctlpar\par
+\b\fs28 Entering the Product Key\par
+\b0\fs24\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 The product key is a 20-character alphanumeric value (20-digit or 12-digit number for older versions) found on the Sapera LT or Sapera Essential CD case. It is also on the package box, on the CD envelope and on a floating sticker. When more than one keys are available the first of the list corresponds to the product key.\par
+{\pntext\f3\'B7\tab}If you are upgrading to a new Sapera LT version you don\rquote t receive a new product key. You must use the product key you received when purchasing the SDK.\par
+\pard\nowidctlpar\par
+\par
+\cf1\b\fs32 Backward Compatibility Information\par
+\cf0\fs28 Upgrading from version 6.00 and up\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0\fs24 All applications using the C API (CorApi) are compatible without any need to recompile.\par
+{\pntext\f3\'B7\tab}All applications using Sapera++ are compatible. However recompiling is strongly recommended so that all the latest fixes are available.\par
+\pard\nowidctlpar\par
+\par
+\cf1\b\fs32 Differences with Sapera LT for 32-bit Windows\par
+\cf0\b0\fs24\par
+The following features are not supported by Sapera LT for Windows 64-bit:\par
+\par
+\b Standard API\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0 PCI Device module (CorPci)\par
+{\pntext\f3\'B7\tab}The following Buffer module functions: CorBufferMap, CorBufferMapEx, CorBufferUnmap\par
+{\pntext\f3\'B7\tab}Support for the JPEG2000 file format\par
+\pard\nowidctlpar\par
+\b Sapera++\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0 Unmapped buffer types in SapBuffer class\par
+{\pntext\f3\'B7\tab}The GUI class CCamVicDlg\par
+{\pntext\f3\'B7\tab}Support for C++ Builder\par
+\pard\nowidctlpar\par
+\b Tools\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\b0 Font Generator\par
+{\pntext\f3\'B7\tab}Application Wizard\par
+{\pntext\f3\'B7\tab}Diagnostic Tool\par
+{\pntext\f3\'B7\tab}TWAIN support\par
+{\pntext\f3\'B7\tab}DirectShow filter\par
+\pard\nowidctlpar\par
+\par
+\cf1\b\fs32 Notes\par
+\cf0\b0\fs24\par
+\i General\i0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 If you are using Visual Studio 2005 or 2008 to develop Sapera LT applications, then you should have Service Pack 1 installed. You can check if this service pack is installed through the Help->About menu item in Visual Studio.\par
+{\pntext\f3\'B7\tab}The maximum supported size for AVI files is 2 Gbytes.\par
+\pard\nowidctlpar\par
+\i Known issues\i0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Display of overlay and offscreen buffers is not supported under Windows Vista, a 'Direct Draw not Available' error is returned when trying to create a CorView (or SapView) object\par
+{\pntext\f3\'B7\tab}It is not possible to use the Visual Studio Designer with the C# and Visual Basic .NET demos. In this case, Visual Studio reports an error by which it cannot load the DALSA.SaperaLT.SapClassBasic assembly. In order to be able to use the Designer for these demos, you need the 32-bit version of Sapera LT on 32-bit Windows.\par
+\pard\nowidctlpar\par
+\i Fixing linker error for 'SapClassBasicD.lib'\par
+\i0 In older versions of Sapera LT, the Sapera++ classes DLL for Visual Studio were provided both in a debug and a release version, so that Sapera++ based applications would use different import libraries (SapClassBasicD.lib vs SapClassBasic.lib) for debug and release builds.\par
+\par
+Only a release version is now provided. This results in a Visual Studio linker error related to a missing SapClassBasicD.lib when recompiling (in debug mode) applications written using an earlier version of Sapera LT.\par
+\par
+To fix this problem, review the names of the import libraries used by the Visual Studio project for the application, and replace all instances of SapClassBasicD.lib by SapClassBasic.lib\par
+\line\i Writing Windows applications (.exe) that use the Sapera LT libraries\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\i0 When using the Standard C API, you must call CorManOpen before any other API function. You must also call CorManClose after the last API function.\par
+{\pntext\f3\'B7\tab}This rule does not apply when using the Sapera++ API.\par
+\pard\nowidctlpar\par
+\i Writing Windows DLLs that use the Sapera LT libraries\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720\i0 When using the Standard C API, you must call CorManOpen before any other API function. You must also call CorManClose after the last API function. However, you must not call these from the DllMain function.\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlcont\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar When using the Sapera++ API, you must not have a static instance of a Sapera++ object. Also, you must not allocate or free such an object from the DllMain function. \line\line\f2\fs20\tab SapBuffer staticBuf;\tab\tab // Wrong !!\par
+{\pntext\f3\'B7\tab}\tab SapBuffer *pBuffer;\tab\tab // OK\par
+{\pntext\f3\'B7\tab}\par
+{\pntext\f3\'B7\tab}\tab DllMain()\par
+{\pntext\f3\'B7\tab}\tab\{\par
+{\pntext\f3\'B7\tab}\tab\tab pBuffer = new SapBuffer();\tab // Wrong !!\par
+{\pntext\f3\'B7\tab}\tab\tab delete pBuffer;\tab\tab\tab // Wrong !!\par
+{\pntext\f3\'B7\tab}\tab\}\par
+{\pntext\f3\'B7\tab}\par
+{\pntext\f3\'B7\tab}\tab MyFunction()\line\tab\{\par
+{\pntext\f3\'B7\tab}\tab\tab pBuffer = new SapBuffer();\tab // OK\par
+{\pntext\f3\'B7\tab}\tab\tab delete pBuffer;\tab\tab\tab // OK\par
+{\pntext\f3\'B7\tab}\tab\}\par
+\f0\fs24{\pntext\f3\'B7\tab}\par
+\i{\pntext\f3\'B7\tab}Boards\i0\par
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-720\li720 Consult the board's Readme file for more information.\par
+\pard\nowidctlpar\par
+}
+ 

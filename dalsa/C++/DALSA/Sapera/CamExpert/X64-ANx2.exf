@@ -1,0 +1,17 @@
+[PrmCap]
+
+; Camera Control setting
+Horizontal Drive =  0, 0x0005, 0, HD
+Vertical Drive =  0, 0x0006, 0, VD
+Reset/Integration Pulse =  0, 0x000f, 0, Reset
+Pixel Clock Input =  0, 0x0, 0, PixelClock
+WEN In =  0, 0x000f, 0, WEN
+
+
+[ValueInfo]
+HD = 0x0;Horizontal Drive
+VD = 0x0;Vertical Drive
+Reset = 0x0;Reset/Trigger
+PixelClock = 0x0;Pixel Clock Input
+WEN = 0x0;WEN Input
+

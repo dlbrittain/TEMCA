@@ -1,0 +1,15 @@
+[PrmCap]
+
+; Camera control setting
+CC1 =  0, 0xffffffff, 0, Not used
+CC2 =  0, 0xffffffff, 0, Not used
+CC3 =  0, 0xffffffff, 0, Not used
+CC4 =  0, 0xffffffff, 0, Not used
+External Line Trigger Source = 0, 0, 0, ELTS
+External Trigger Source = 0, 0, 0, ETS
+
+
+[ValueInfo]
+ELTS = 0x0;Automatic, 0x0001;Shaft Encoder Input A, 0x0002; Shaft Encoder Input A and B
+ETS  = 0x0;External Trigger #1
+

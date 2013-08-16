@@ -1,0 +1,24 @@
+[PrmCap]
+
+; Hirose setting
+Horizontal Drive =  0, 0x120, 0, HD
+Vertical Drive =  0, 0x140, 0, VD
+Reset/Integration Pulse =  0, 0x760, 0, Reset
+Pixel Clock Input =  0, 0x0, 0, PixelClock
+WEN In =  0, 0x760, 0, WEN
+Power +12V =  0, 0x2, 0, Power12
+GND =  0, 0x891, 0, GND
+Video GND =  0, 0x4, 0, VideoGND
+Video IN =  0, 0x8, 0, VideoIn
+
+[ValueInfo]
+HD = 0x0;Horizontal Drive
+VD = 0x0;Vertical Drive
+Reset = 0x0;Reset/Trigger
+PixelClock = 0x0;Pixel Clock Input
+WEN = 0x0;WEN Input
+Power12= 0x0;Power +12V
+GND= 0x0;GND
+VideoGND=0x0;Video GND
+VideoIn=0x0;Video IN
+
